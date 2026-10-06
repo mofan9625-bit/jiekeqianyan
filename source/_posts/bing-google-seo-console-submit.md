@@ -1,6 +1,7 @@
 ---
 title: 如何将博客正确接入 Bing 站长工具与 Google Search Console 提升收录？
 date: 2026-10-05 18:00:00
+cover: 'https://images.unsplash.com/photo-1790913766619-431c8f57d923?q=80&w=1171&auto=format&fit=crop'
 categories:
   - 避坑与故障排查
   - 站长 SEO
@@ -10,8 +11,6 @@ tags:
   - 网站收录
   - SEO优化
 ---
-
-![搜索引擎收录与 Sitemap 文章封面](https://images.unsplash.com/photo-1790913766619-431c8f57d923?q=80&w=1171&auto=format&fit=crop)
 
 建好博客后，最关键的一步就是让 Bing（必应）与 Google（谷歌）搜索引擎快速爬取并收录文章。通过将站点提交至站长工具，可大幅缩短收录周期。本文将分享操作全流程。
 

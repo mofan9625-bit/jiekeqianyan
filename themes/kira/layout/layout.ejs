@@ -19,6 +19,9 @@
 				cleanDesc = cleanDesc.substring(0, 147) + '...';
 			}
 			var pageCanonicalUrl = config.url + url_for(page.path);
+			var pageImageUrl = page.cover
+				? (/^https?:\/\//i.test(page.cover) ? page.cover : config.url + url_for(page.cover))
+				: config.url + theme.avatar;
 			if (pageCanonicalUrl.endsWith('index.html')) {
 				pageCanonicalUrl = pageCanonicalUrl.slice(0, -10);
 			}
@@ -41,14 +44,14 @@
 		<meta property="og:description" content="<%= cleanDesc %>" />
 		<meta property="og:url" content="<%= pageCanonicalUrl %>" />
 		<meta property="og:site_name" content="<%= config.title %>" />
-		<meta property="og:image" content="<%= page.cover ? config.url + url_for(page.cover) : config.url + theme.avatar %>" />
+		<meta property="og:image" content="<%= pageImageUrl %>" />
 		<meta property="og:locale" content="zh_CN" />
 
 		<!-- Twitter Card Metadata -->
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content="<%= title ? title + ' - ' + config.title : config.title %>" />
 		<meta name="twitter:description" content="<%= cleanDesc %>" />
-		<meta name="twitter:image" content="<%= page.cover ? config.url + url_for(page.cover) : config.url + theme.avatar %>" />
+		<meta name="twitter:image" content="<%= pageImageUrl %>" />
 
 		<!-- Schema.org JSON-LD Structured Data -->
 		<script type="application/ld+json">

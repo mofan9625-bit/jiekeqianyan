@@ -1,6 +1,7 @@
 ---
 title: Hysteria2 与 TUIC 协议详解：为什么新一代代理协议速度能翻倍？
 date: 2026-10-05 11:00:00
+cover: 'https://images.unsplash.com/photo-1789375187995-437594292a39?q=80&w=687&auto=format&fit=crop'
 categories:
   - 机场与代理工具
   - 协议技术
@@ -10,8 +11,6 @@ tags:
   - 代理协议
   - 晚高峰不卡专线
 ---
-
-![Hysteria2 与 TUIC 协议文章封面](https://images.unsplash.com/photo-1789375187995-437594292a39?q=80&w=687&auto=format&fit=crop)
 
 从早期的 Shadowsocks、VMess 到如今的 Hysteria2 (歇斯底里) 与 TUIC，代理传输协议经历了几代演进。为什么基于 UDP 的新协议能在恶劣网络下实现速度翻倍？本文将深入浅出解析其底层原理。
 

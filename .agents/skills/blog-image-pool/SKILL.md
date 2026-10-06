@@ -1,6 +1,6 @@
 ---
 name: blog-image-pool
-description: Use Bruce Alexander's default image pool whenever creating, generating, importing, or substantially rewriting a blog article in this repository. Select and insert one cover image at the beginning of the article; do not apply to non-blog content.
+description: Use Bruce Alexander's default image pool whenever creating, generating, importing, or substantially rewriting a blog article in this repository. Set one image as the article's Kira cover through Front Matter; never insert it into the article body unless explicitly requested.
 ---
 
 # Default Blog Image Pool
@@ -9,14 +9,15 @@ For every blog article created, generated, or imported in this repository:
 
 1. Choose one URL from the pool below.
 2. Prefer a URL not used by the most recent articles. When usage can be inspected, choose randomly among the least-used URLs so consecutive articles do not reuse the same image.
-3. Insert it immediately after the article frontmatter and before the article body in Markdown form:
+3. Set it in the Hexo Front Matter using the Kira theme's `cover` field:
 
-   ```markdown
-   ![Concise article-specific cover alt text](IMAGE_URL)
+   ```yaml
+   cover: 'IMAGE_URL'
    ```
 
-4. Preserve the selected URL exactly. Do not download, rehost, transform, or replace it unless the user asks.
-5. If the user explicitly provides a cover image for an article, use that image instead of this pool.
+4. Do not insert the cover as a Markdown image in the article body. The cover is rendered by the theme on article cards and article headers.
+5. Preserve the selected URL exactly. Do not download, rehost, transform, or replace it unless the user asks.
+6. If the user explicitly provides a cover image for an article, use that image instead of this pool.
 
 ## Image Pool
 

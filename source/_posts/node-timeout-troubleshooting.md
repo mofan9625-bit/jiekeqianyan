@@ -1,6 +1,7 @@
 ---
 title: 为什么你的代理经常断连？节点超时、订阅更新失败的 6 种排查方法
 date: 2026-10-05 16:30:00
+cover: 'https://images.unsplash.com/photo-1790841584223-cf0abbd0dc3d?q=80&w=687&auto=format&fit=crop'
 categories:
   - 避坑与故障排查
   - 排查指南
@@ -10,8 +11,6 @@ tags:
   - 故障排查
   - 科学上网
 ---
-
-![节点超时故障排查文章封面](https://images.unsplash.com/photo-1790841584223-cf0abbd0dc3d?q=80&w=687&auto=format&fit=crop)
 
 在日常使用网络代理时，突然遇到的“节点连接超时”、“订阅更新失败”或“网页无限加载”常常让人十分抓狂。本文将整理 6 种最有效的排查与自我修复方法。
 

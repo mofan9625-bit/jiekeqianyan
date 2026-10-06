@@ -1,6 +1,7 @@
 ---
 title: 硬核AI工具红黑榜 Vol.2：盘点那些被过度吹捧但实际“踩雷”的 AI 效率软件
 date: 2026-10-05 13:30:00
+cover: 'https://images.unsplash.com/photo-1790886515516-ac13e56f3e96?q=80&w=687&auto=format&fit=crop'
 categories:
   - 硬核AI工具红黑榜
   - 科技实测
@@ -9,8 +10,6 @@ tags:
   - AI避坑
   - 红黑榜
 ---
-
-![AI 工具红黑榜文章封面](https://images.unsplash.com/photo-1790886515516-ac13e56f3e96?q=80&w=687&auto=format&fit=crop)
 
 欢迎来到《硬核AI工具红黑榜》Vol.2！当生成式 AI 热潮席卷全球，市面上涌现出了成百上千款套壳 AI 软件。许多工具靠营销噱头赚足了眼球，实测体验却惨不忍睹。本文将为你剥离套壳噱头，带来真正的硬核避坑分析。
 

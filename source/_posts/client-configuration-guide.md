@@ -1,6 +1,7 @@
 ---
 title: 新手科学上网全攻略：主流客户端（Clash Verge Rev/小火箭）新手配置教程
 date: 2026-10-05 09:30:00
+cover: 'https://images.unsplash.com/photo-1772289934977-1c1ef093e041?q=80&w=1632&auto=format&fit=crop'
 categories:
   - 机场与代理工具
   - 客户端配置
@@ -10,8 +11,6 @@ tags:
   - Shadowrocket
   - 订阅导入
 ---
-
-![代理客户端配置教程文章封面](https://images.unsplash.com/photo-1772289934977-1c1ef093e041?q=80&w=1632&auto=format&fit=crop)
 
 对于第一次接触代理网络的新手而言，面对不同的操作系统与纷繁复杂的代理软件，如何快速完成 **新手科学上网客户端配置** 常常令人头疼。本文将针对 Windows、macOS、iOS 和 Android 四大平台，为你带来一站式图文导入教程。
 

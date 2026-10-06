@@ -1,6 +1,7 @@
 ---
 title: 科学上网的“规则模式”与“全局模式”到底有什么区别？日常该怎么选？
 date: 2026-10-05 18:30:00
+cover: 'https://images.unsplash.com/photo-1790886965387-ed055870babc?q=80&w=687&auto=format&fit=crop'
 categories:
   - 避坑与故障排查
   - 基础概念
@@ -10,8 +11,6 @@ tags:
   - 科学上网
   - Clash配置
 ---
-
-![规则模式与全局模式文章封面](https://images.unsplash.com/photo-1790886965387-ed055870babc?q=80&w=687&auto=format&fit=crop)
 
 在使用 Clash、Shadowrocket 等代理客户端时，“规则模式 (Rule)”、“全局模式 (Global)” 与 “直连模式 (Direct)” 是最基础但也最容易混淆的三个选项。本文将深度解析这三种模式的底层原理与适用场景。
 

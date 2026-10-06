@@ -1,6 +1,7 @@
 ---
 title: 别再手写报告了！盘点 5 款能一键生成排版精美 PPT 的 AI 工具
 date: 2026-10-05 12:30:00
+cover: 'https://images.unsplash.com/photo-1790619719523-43ba16a2303e?q=80&w=1964&auto=format&fit=crop'
 categories:
   - AI与效率工具
   - 演示文稿
@@ -10,8 +11,6 @@ tags:
   - MindShow
   - 效率工具
 ---
-
-![AI PPT 工具推荐文章封面](https://images.unsplash.com/photo-1790619719523-43ba16a2303e?q=80&w=1964&auto=format&fit=crop)
 
 制作 PPT 演示文稿一直以来都是职场人最繁重的重体力活之一。从逻辑大纲、文案提炼到视觉排版，往往需要耗费数小时。2026 年，新一代 AI 演示工具已经实现了“输入大纲，一键生成演示文稿”。本文将实测盘点 5 款神器。
 

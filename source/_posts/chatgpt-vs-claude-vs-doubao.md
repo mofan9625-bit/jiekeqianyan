@@ -1,6 +1,7 @@
 ---
 title: ChatGPT vs Claude vs 豆包：2026年国内办公最值得用的 AI 大模型盘点
 date: 2026-10-05 11:30:00
+cover: 'https://images.unsplash.com/photo-1768595408288-22f8215ba8e9?q=80&w=714&auto=format&fit=crop'
 categories:
   - AI与效率工具
   - 大模型横评
@@ -10,8 +11,6 @@ tags:
   - 豆包AI
   - 生产力工具
 ---
-
-![主流 AI 大模型对比文章封面](https://images.unsplash.com/photo-1768595408288-22f8215ba8e9?q=80&w=714&auto=format&fit=crop)
 
 2026 年，生成式 AI 大模型已经全面渗透到日常办公与职场生产力中。面对海外霸主 ChatGPT、文案代码神器 Claude 以及国内顶流豆包 AI，职场人该如何选择？本文将进行横向对比实测。
 

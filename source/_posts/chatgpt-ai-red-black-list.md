@@ -1,6 +1,7 @@
 ---
 title: 硬核AI工具红黑榜 Vol.1 | ChatGPT：六边形战士的杀手锏与幻觉硬伤
 date: 2026-10-04 20:45:00
+cover: 'https://images.unsplash.com/photo-1790326880683-d4f8d3292f7f?q=80&w=687&auto=format&fit=crop'
 categories:
   - 硬核AI工具红黑榜
   - 科技实测
@@ -11,8 +12,6 @@ tags:
   - 生产力
   - 深度测评
 ---
-
-![ChatGPT 硬核测评文章封面](https://images.unsplash.com/photo-1790326880683-d4f8d3292f7f?q=80&w=687&auto=format&fit=crop)
 
 > ⚡ **专栏前言**：欢迎来到《硬核AI工具红黑榜》第 1 期！这里是ACG与硬核科技交汇的魔法实验室。本专栏将用最真实、最毒舌也最客观的实测视角，拆解 10 款主流 AI 杀手级工具。不吹不黑，直接拉满干货！
 

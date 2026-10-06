@@ -1,0 +1,23 @@
+# 极客前沿 (Jike Qianyan)
+
+> 专注于前沿科技、AI 效率办公、网络技术测评与跨境出海干货的独立博客。
+
+## 站点核心主题 (Core Topics)
+- **AI 与效率工具**: 大模型横评（ChatGPT vs Claude vs 豆包）、AI 自动生成 PPT、Prompt 提示词工程、Excel 数据分析 AI 化
+- **机场与代理工具**: 2026 年最新稳定机场测评、IEPL/IPLC 专线原理、Hysteria2 / TUIC 协议解读、Clash Verge Rev & Shadowrocket 配置指南
+- **硬核 AI 工具红黑榜**: 常用 AI 避坑指南、服务稳定性与跑路预警
+- **避坑与故障排查**: Cloudflare 403 / CC 攻击防御、Node 超时排查、网站挂马与恶意代码清除、Google / Bing 收录提交
+- **跨境出海**: Shopify 独立站建站全流程、Apollo.io 邮件营销获客、Klaviyo 弃购挽回、TikTok & Meta 广告风控
+
+## 核心文章与资料 (Core Content & Guides)
+- [2026年最新稳定高性价比机场推荐：晚高峰不卡顿的专线汇总](https://jikeqianyan.net/2026/10/05/2026-airport-recommendation/)
+- [ChatGPT vs Claude 3.5 Sonnet vs 豆包 AI：2026 深度横评](https://jikeqianyan.net/2026/10/05/chatgpt-vs-claude-vs-doubao/)
+- [新手独立站出海必备：2026年 Shopify 建站全流程与必备插件指南](https://jikeqianyan.net/2026/10/05/shopify-cross-border-guide/)
+- [新手科学上网客户端配置指南：Clash Verge Rev / Shadowrocket 快速上手](https://jikeqianyan.net/2026/10/05/client-configuration-guide/)
+- [Google Search Console 与 Bing Webmaster Tools 网站收录与 Sitemap 提交全攻略](https://jikeqianyan.net/2026/10/05/bing-google-seo-console-submit/)
+- [Cloudflare 5秒盾与 WAF 防火墙配置：彻底解决 403 错误与 CC 攻击](https://jikeqianyan.net/2026/10/05/cloudflare-firewall-cc-403-guide/)
+- [网站被挂马排查与修复指南：彻底清除恶意代码与恢复 SEO 排名](https://jikeqianyan.net/2026/10/05/website-malware-removal-guide/)
+
+## 更多地图与规范 (Site Maps & Feeds)
+- XML Sitemap: https://jikeqianyan.net/sitemap.xml
+- Text Sitemap: https://jikeqianyan.net/sitemap.txt

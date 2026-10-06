@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/
+Allow: /about/
+Allow: /faq/
+Disallow: /css/
+Disallow: /js/
+Disallow: /lib/
+
+# Search Engine & AI Crawler Sitemaps
+Sitemap: https://jikeqianyan.net/sitemap.xml
+Sitemap: https://jikeqianyan.net/sitemap.txt
+Sitemap: https://jikeqianyan.net/llms.txt

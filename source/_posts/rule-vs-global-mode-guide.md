@@ -11,6 +11,8 @@ tags:
   - Clash配置
 ---
 
+![规则模式与全局模式文章封面](https://images.unsplash.com/photo-1790886965387-ed055870babc?q=80&w=687&auto=format&fit=crop)
+
 在使用 Clash、Shadowrocket 等代理客户端时，“规则模式 (Rule)”、“全局模式 (Global)” 与 “直连模式 (Direct)” 是最基础但也最容易混淆的三个选项。本文将深度解析这三种模式的底层原理与适用场景。
 
 ---

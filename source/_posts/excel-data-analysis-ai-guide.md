@@ -11,6 +11,8 @@ tags:
   - 数据分析
 ---
 
+![AI Excel 数据分析文章封面](https://images.unsplash.com/photo-1790949241847-078980f679af?q=80&w=692&auto=format&fit=crop)
+
 在日常办公中，面对动辄数万行、包含空值与混乱格式的 Excel 原始数据表，人工编写 VLOOKUP 或透视表耗时耗力。借助 ChatGPT 的代码沙箱与 Claude 的长文本能力，你可以实现全自动 Excel 处理。
 
 ---

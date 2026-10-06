@@ -11,6 +11,8 @@ tags:
   - 独立站
 ---
 
+![Klaviyo 弃购挽回文章封面](https://images.unsplash.com/photo-1791114744070-f4806d5349af?q=80&w=687&auto=format&fit=crop)
+
 数据显示，跨境电商独立站的平均弃购率（Cart Abandonment Rate）高达 70% 以上。也就是说，每 100 个把商品加购的访客中，有 70 多人未完成支付。通过 **Klaviyo 自动化邮件工作流**，能帮助卖家挽回 15%-25% 的流失销售额。
 
 ---

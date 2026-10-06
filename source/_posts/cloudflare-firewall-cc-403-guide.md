@@ -11,6 +11,8 @@ tags:
   - 403错误
 ---
 
+![Cloudflare 防火墙配置文章封面](https://images.unsplash.com/photo-1791190288870-dba9caefaba6?q=80&w=687&auto=format&fit=crop)
+
 作为全球最大的 CDN 与安全防护基础设施，Cloudflare 是独立站与个人博客抵御 DDOS/CC 攻击的最强盾牌。然而，配置不当往往会导致正常访客误触 `403 Forbidden` 错误。本文将为你分享优化配置指南。
 
 ---

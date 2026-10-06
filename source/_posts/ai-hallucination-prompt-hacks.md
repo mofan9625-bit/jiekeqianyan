@@ -11,6 +11,8 @@ tags:
   - Prompt工程
 ---
 
+![AI 幻觉与提示词技巧文章封面](https://images.unsplash.com/photo-1790841584223-cf0abbd0dc3d?q=80&w=687&auto=format&fit=crop)
+
 大语言模型（LLM）最被诟病的缺点之一就是“一本正经地胡说八道”（AI 幻觉，Hallucination）。特别是在撰写专业报告、法律合同或代码时，虚假信息往往会带来严重后果。本文将分享 4 个顶尖提示词技巧，彻底击碎 AI 幻觉。
 
 ---

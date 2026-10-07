@@ -1,0 +1,41 @@
+name: Submit URLs to IndexNow
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site and sitemap
+        run: npm run build
+
+      - name: Submit sitemap URLs to IndexNow
+        env:
+          SITE_URL: https://jikeqianyan.net
+          INDEXNOW_WAIT_FOR_KEY: 'true'
+          INDEXNOW_WAIT_TIMEOUT_MS: '300000'
+        run: npm run indexnow

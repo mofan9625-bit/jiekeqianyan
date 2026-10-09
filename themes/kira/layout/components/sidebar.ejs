@@ -1,7 +1,11 @@
 <div class="kira-sidebar" id="sidebar">
 	<div class="kira-site-logo">
 		<a href="<%- url_for('/') %>" title="<%= config.title %>">
-			<h2><%= config.title %></h2>
+			<% if (is_home()) { %>
+				<h1><%= config.title %></h1>
+			<% } else { %>
+				<h2><%= config.title %></h2>
+			<% } %>
 		</a>
 	</div>
 	<div class="kira-avatar mdui-ripple">

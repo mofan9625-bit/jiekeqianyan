@@ -29,7 +29,7 @@ tags:
 | **AI 生产力实测** | Claude 3.5 Sonnet / OpenAI GPT-4o 零阻断，长 Token 流式输出零中断 |
 | **晚高峰丢包表现** | 核心亚太节点丢包率 ≤ 0.2%，延迟抖动 < 4ms |
 | **综合评分** | **9.6 / 10** |
-| **官方直达通道** | [👉 访问云界线官网（已内置极客前沿专属 7 折特惠）](https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L) |
+| **官方直达通道** | <a href="https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L" rel="nofollow sponsored noopener noreferrer">👉 访问云界线官网（已内置极客前沿专属 7 折特惠）</a> |
 
 ---
 
@@ -94,4 +94,4 @@ tags:
 
 ---
 
-> **传送门**：[点击直达云界线官方站点享受专线特惠](https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L)
+> **传送门**：<a href="https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L" rel="nofollow sponsored noopener noreferrer">点击直达云界线官方站点享受专线特惠</a>

@@ -24,13 +24,13 @@ menu:
         - /
         - icon-home
     文章归档:
-        - /archive.html
+        - /archives/
         - icon-container
     关于本人:
-        - /about.html
+        - /about/
         - icon-user
     常见问题:
-        - /faq.html
+        - /faq/
         - icon-unordered-list
 
 widgets:

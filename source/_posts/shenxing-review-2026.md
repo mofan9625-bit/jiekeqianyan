@@ -28,7 +28,7 @@ tags:
 | **日常流媒体与办公** | 4K 极清秒开无卡顿，外服游戏联机 NAT Open，Zoom / Teams 会议零音画脱节 |
 | **性价比指数** | ★★★★★（起步价仅 ¥18.00/月，特惠折算低至 ¥1.1/天） |
 | **综合评分** | **9.1 / 10** |
-| **官方直达通道** | <a href="https://vipmofan01.shenxingaff.com/#/?code=nn4ohwnK" target="_blank" rel="nofollow sponsored noopener noreferrer">🔗 👉 访问神行加速官网（电竞级 FullCone NAT 低至 ¥1.1/天专属特惠）</a> |
+| **官方直达通道** | <a href="/go.html?id=shenxing" target="_blank" rel="nofollow sponsored noopener noreferrer">🔗 👉 访问神行加速官网（电竞级 FullCone NAT 低至 ¥1.1/天专属特惠）</a> |
 
 ---
 
@@ -93,4 +93,4 @@ tags:
 
 ---
 
-> **传送通道**：<a href="https://vipmofan01.shenxingaff.com/#/?code=nn4ohwnK" target="_blank" rel="nofollow sponsored noopener noreferrer">前往神行加速官方网站选购适合您的专属套餐</a>
+> **传送通道**：<a href="/go.html?id=shenxing" target="_blank" rel="nofollow sponsored noopener noreferrer">前往神行加速官方网站选购适合您的专属套餐</a>

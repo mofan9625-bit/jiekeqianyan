@@ -28,7 +28,7 @@ tags:
 | **日常流媒体与办公** | YouTube 8K 极清秒开，Hugging Face / GitHub 满速并发拉取，海外开发环境极速响应 |
 | **性价比指数** | ★★★★★（起步仅 ¥24.00/月，大流量包折后低至 7 折） |
 | **综合评分** | **9.3 / 10** |
-| **官方直达通道** | <a href="https://mofan88.liulianyunaff.com/#/?code=ETsQBSuR" target="_blank" rel="nofollow sponsored noopener noreferrer">🔗 👉 访问榴莲云官网（750GB 海量物理专线 7 折直达通道）</a> |
+| **官方直达通道** | <a href="/go.html?id=liulianyun" target="_blank" rel="nofollow sponsored noopener noreferrer">🔗 👉 访问榴莲云官网（750GB 海量物理专线 7 折直达通道）</a> |
 
 ---
 
@@ -93,4 +93,4 @@ tags:
 
 ---
 
-> **传送通道**：<a href="https://mofan88.liulianyunaff.com/#/?code=ETsQBSuR" target="_blank" rel="nofollow sponsored noopener noreferrer">前往榴莲云官方网站选购适合您的专属套餐</a>
+> **传送通道**：<a href="/go.html?id=liulianyun" target="_blank" rel="nofollow sponsored noopener noreferrer">前往榴莲云官方网站选购适合您的专属套餐</a>

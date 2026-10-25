@@ -1,0 +1,307 @@
+---
+layout: false
+---
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <title>安全跳转中 · 极客前沿</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: rgba(30, 41, 59, 0.7);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #3b82f6;
+      --accent-glow: rgba(59, 130, 246, 0.35);
+      --success: #10b981;
+      --danger: #ef4444;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(139, 92, 246, 0.15) 0px, transparent 50%);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 36px 28px;
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(12px);
+      text-align: center;
+      animation: fadeIn 0.4s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .brand {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .spinner-wrap {
+      position: relative;
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 24px;
+    }
+
+    .spinner {
+      width: 100%;
+      height: 100%;
+      border: 3px solid rgba(255, 255, 255, 0.08);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.9s cubic-bezier(0.55, 0.15, 0.45, 0.85) infinite;
+    }
+
+    .spinner-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    h1 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    .desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .target-badge {
+      display: inline-block;
+      padding: 6px 14px;
+      background: rgba(59, 130, 246, 0.12);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 9999px;
+      color: #60a5fa;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 12px 20px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
+      border: none;
+      border-radius: 12px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 4px 14px var(--accent-glow);
+      transition: all 0.2s ease;
+    }
+
+    .btn:hover {
+      background: linear-gradient(135deg, #1d4ed8, #2563eb);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.08);
+      box-shadow: none;
+      color: var(--text);
+      margin-top: 12px;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.14);
+    }
+
+    .footer-tip {
+      font-size: 12px;
+      color: #64748b;
+      margin-top: 24px;
+      line-height: 1.5;
+    }
+
+    .error-box {
+      display: none;
+    }
+
+    .error-icon {
+      font-size: 44px;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container" id="redirectBox">
+    <div class="brand">
+      <span>⚡ 极客前沿 · 安全跳转承接</span>
+    </div>
+
+    <div class="spinner-wrap">
+      <div class="spinner"></div>
+      <div class="spinner-icon">🚀</div>
+    </div>
+
+    <h1 id="titleText">正在安全连接官方通道</h1>
+    <p class="desc" id="descText">已为您激活极客前沿专属特惠与专属带宽通道，页面正在自动跳转...</p>
+
+    <div id="targetBadgeWrap">
+      <span class="target-badge" id="targetBadge">正在校验服务商...</span>
+    </div>
+
+    <a href="#" id="directBtn" class="btn" rel="nofollow sponsored noopener noreferrer">立即直达官网 (如未自动跳转)</a>
+    
+    <div class="footer-tip">
+      🛡️ 本链接为极客前沿安全 301 隔离通道，遵循国际赞助合规规范。<br>
+      严格屏蔽恶意劫持与网络爬虫权重传递。
+    </div>
+  </div>
+
+  <div class="container error-box" id="errorBox">
+    <div class="error-icon">⚠️</div>
+    <h1>未找到指定的跳转目标</h1>
+    <p class="desc" style="margin-top: 10px;">该直达通道可能已下线或请求参数不完整，请返回博客主站或浏览最新评测。</p>
+    <a href="/" class="btn btn-secondary">返回博客首页</a>
+  </div>
+
+  <script>
+    (function() {
+      // 官方 301 推广与特惠通道映射表
+      var AFF_MAP = {
+        'yunjiexian': {
+          name: '云界线官方站点（专属 7 折特惠通道）',
+          url: 'https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L'
+        },
+        'dalaoyun': {
+          name: '大佬云官方站点（原生双 ISP 住宅开发专线）',
+          url: 'https://mofanvip01.dalaoyunaff.com/#/?code=QT2rqp5V'
+        },
+        'huanqiuti': {
+          name: '环球梯官方站点（高性价比轻量办公专属礼包）',
+          url: 'https://mofanvip01.huanqiutiaff.com/#/?code=l7oLmjVU'
+        },
+        'liulianyun': {
+          name: '榴莲云官方站点（750GB 海量物理专线 7 折直达通道）',
+          url: 'https://mofan88.liulianyunaff.com/#/?code=ETsQBSuR'
+        },
+        'shandianshu': {
+          name: '闪电鼠官方站点（全节点 1x 专线无套路 · 不限设备并发特惠）',
+          url: 'https://mofanvip01.shandianshuaff.com/#/?code=a3GAQAXg'
+        },
+        'shenxing': {
+          name: '神行加速官方站点（电竞级 FullCone NAT 低至 ¥1.1/天专属特惠）',
+          url: 'https://vipmofan01.shenxingaff.com/#/?code=nn4ohwnK'
+        }
+      };
+
+      // 解析当前 URL 参数
+      function getTargetId() {
+        var params = new URLSearchParams(window.location.search);
+        var id = params.get('id') || params.get('target') || params.get('to');
+        if (id) return id.toLowerCase().trim();
+
+        // 尝试从 pathname 解析，如 /go/yunjiexian
+        var path = window.location.pathname;
+        var match = path.match(/\/go\/([a-zA-Z0-9_\-]+)/);
+        if (match && match[1]) {
+          return match[1].toLowerCase().trim();
+        }
+
+        // 尝试从 hash 解析
+        if (window.location.hash) {
+          var hashId = window.location.hash.replace(/^#\/?/, '').trim();
+          if (hashId && AFF_MAP[hashId.toLowerCase()]) {
+            return hashId.toLowerCase();
+          }
+        }
+        return null;
+      }
+
+      var targetId = getTargetId();
+      var targetInfo = targetId ? AFF_MAP[targetId] : null;
+
+      var redirectBox = document.getElementById('redirectBox');
+      var errorBox = document.getElementById('errorBox');
+      var targetBadge = document.getElementById('targetBadge');
+      var directBtn = document.getElementById('directBtn');
+
+      if (targetInfo && targetInfo.url) {
+        targetBadge.textContent = '直达：' + targetInfo.name;
+        directBtn.href = targetInfo.url;
+        document.title = '正在安全跳转至 ' + targetInfo.name + ' · 极客前沿';
+
+        // 立即执行安全重定向
+        try {
+          window.location.replace(targetInfo.url);
+        } catch (e) {
+          window.location.href = targetInfo.url;
+        }
+
+        // 容错备用定时器：200ms 后再次触发
+        setTimeout(function() {
+          try {
+            window.location.replace(targetInfo.url);
+          } catch (e) {
+            window.location.href = targetInfo.url;
+          }
+        }, 200);
+      } else {
+        // 未匹配到有效目标
+        redirectBox.style.display = 'none';
+        errorBox.style.display = 'block';
+        document.title = '未找到指定目标 · 极客前沿';
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -8,6 +8,9 @@ Allow: /faq/
 Disallow: /css/
 Disallow: /js/
 Disallow: /lib/
+Disallow: /go.html
+Disallow: /go/
+Disallow: /go/*
 
 # Search Engine & AI Crawler Sitemaps
 Sitemap: https://jikeqianyan.net/sitemap.xml

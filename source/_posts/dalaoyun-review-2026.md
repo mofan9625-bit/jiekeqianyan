@@ -28,7 +28,7 @@ tags:
 | **开发者场景契合度** | SSH 会话挂载 12 小时零掉线，GitHub Release 满速拉取 |
 | **风控等级测试** | IPQS 欺诈分普遍低于 15 分，Stripe / PayPal 登录无风控弹窗 |
 | **综合评分** | **9.4 / 10** |
-| **官方直达通道** | <a href="https://mofanvip01.dalaoyunaff.com/#/?code=QT2rqp5V" rel="nofollow sponsored noopener noreferrer">👉 访问大佬云官网（开通即享专属开发加速专线）</a> |
+| **官方直达通道** | <a href="/go.html?id=dalaoyun" target="_blank" rel="nofollow sponsored noopener noreferrer">👉 访问大佬云官网（开通即享专属开发加速专线）</a> |
 
 ---
 
@@ -100,4 +100,4 @@ tags:
 
 ---
 
-> **专属通道**：<a href="https://mofanvip01.dalaoyunaff.com/#/?code=QT2rqp5V" rel="nofollow sponsored noopener noreferrer">立即前往大佬云官网获取原生极速节点</a>
+> **专属通道**：<a href="/go.html?id=dalaoyun" target="_blank" rel="nofollow sponsored noopener noreferrer">立即前往大佬云官网获取原生极速节点</a>

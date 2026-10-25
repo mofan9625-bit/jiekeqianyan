@@ -28,7 +28,7 @@ tags:
 | **日常流媒体与办公** | YouTube 4K 瞬时秒开，ChatGPT / Claude 零阻断，长 Token 流式输出稳定 |
 | **性价比指数** | ★★★★★（起步仅 ¥22.00/月，全节点 1.0x 真实计费无暗扣溢价） |
 | **综合评分** | **9.1 / 10** |
-| **官方直达通道** | <a href="https://mofanvip01.shandianshuaff.com/#/?code=a3GAQAXg" target="_blank" rel="nofollow sponsored noopener noreferrer">🔗 👉 访问闪电鼠官网（全节点 1x 专线无套路 · 不限设备并发特惠）</a> |
+| **官方直达通道** | <a href="/go.html?id=shandianshu" target="_blank" rel="nofollow sponsored noopener noreferrer">🔗 👉 访问闪电鼠官网（全节点 1x 专线无套路 · 不限设备并发特惠）</a> |
 
 ---
 
@@ -93,4 +93,4 @@ tags:
 
 ---
 
-> **传送通道**：<a href="https://mofanvip01.shandianshuaff.com/#/?code=a3GAQAXg" target="_blank" rel="nofollow sponsored noopener noreferrer">前往闪电鼠官方网站选购适合您的专属套餐</a>
+> **传送通道**：<a href="/go.html?id=shandianshu" target="_blank" rel="nofollow sponsored noopener noreferrer">前往闪电鼠官方网站选购适合您的专属套餐</a>

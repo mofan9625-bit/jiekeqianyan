@@ -24,7 +24,7 @@ const REVIEWS = [
     packetLoss: '≤ 0.1%（亚太核心专线 0.0% 丢包，Jitter < 2ms）',
     devRating: '★★★★★ 极客生产力天花板（Cursor / Copilot / API 长期保活首选）',
     pricing: '全节点 1.0x 真实倍率，提供专属 7 折特惠',
-    officialUrl: 'https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L'
+    officialUrl: '/go.html?id=yunjiexian'
   },
   {
     name: '大佬云',
@@ -37,7 +37,7 @@ const REVIEWS = [
     packetLoss: '0.0% ~ 0.2%（SSH 会话挂载 12 小时零断线，Jitter 1.2~2.8ms）',
     devRating: '★★★★★ 开发者远程运维底座（VS Code Remote / Docker / Stripe 无风控）',
     pricing: '精品定价路线，不超售，专属开发专线通道',
-    officialUrl: 'https://mofanvip01.dalaoyunaff.com/#/?code=QT2rqp5V'
+    officialUrl: '/go.html?id=dalaoyun'
   },
   {
     name: '环球梯',
@@ -50,7 +50,7 @@ const REVIEWS = [
     packetLoss: '0.1% ~ 0.4%（UDP 弱网抗丢包，校园网/弱 Wi-Fi 15% 丢包下满速吞吐）',
     devRating: '★★★★☆ 跨境轻量协同与备灾副线（低成本容灾主力，多端一键导入）',
     pricing: '每 GB 单价极具杀伤力，轻量月付无压力',
-    officialUrl: 'https://mofanvip01.huanqiutiaff.com/#/?code=l7oLmjVU'
+    officialUrl: '/go.html?id=huanqiuti'
   },
   {
     name: '榴莲云',
@@ -63,7 +63,7 @@ const REVIEWS = [
     packetLoss: '0.0%（晚高峰整条专线 0 丢包，Jitter 1.6ms）',
     devRating: '★★★★★ 大吞吐与大模型研发利器（750GB 海量池，HuggingFace 满速搬迁）',
     pricing: '起步仅 ¥24.00/月，大流量包折后低至 7 折，全节点 1x 真实倍率',
-    officialUrl: 'https://mofan88.liulianyunaff.com/#/?code=ETsQBSuR'
+    officialUrl: '/go.html?id=liulianyun'
   },
   {
     name: '闪电鼠',
@@ -76,7 +76,7 @@ const REVIEWS = [
     packetLoss: '≤ 0.1%（亚太核心专线丢包归零，首包握手 < 35ms）',
     devRating: '★★★★★ 多设备重度党与团队首选（不限在线并发设备数，全节点 1x 实打实）',
     pricing: '起步仅 ¥22.00/月，全节点 1.0x 真实计费无扣量套路',
-    officialUrl: 'https://mofanvip01.shandianshuaff.com/#/?code=a3GAQAXg'
+    officialUrl: '/go.html?id=shandianshu'
   },
   {
     name: '神行加速',
@@ -89,7 +89,7 @@ const REVIEWS = [
     packetLoss: '0.0%（发包 5000 次丢包为 0，抖动 2.4ms，延迟 35~50ms）',
     devRating: '★★★★☆ 游戏联机与流媒体全能战士（NAT Type A/Open，特惠低至 ¥1.1/天）',
     pricing: '起步价仅 ¥18.00/月，特惠折算低至 ¥1.1/天',
-    officialUrl: 'https://vipmofan01.shenxingaff.com/#/?code=nn4ohwnK'
+    officialUrl: '/go.html?id=shenxing'
   }
 ];
 
@@ -236,32 +236,32 @@ tags:
 ### 1. 云界线：工业级全专线主力，极客生产力天花板
 * **评测核心结论**：全链路采用沪港/京日/深新企业级 IEPL/IPLC 内网专线，完全隔离公网骨干波动。晚高峰实测下行带宽高达 864Mbps，丢包率趋近于绝对零（0.0%），Cursor 与 API 响应丝滑。全节点 1.0x 真实倍率，无任何虚标暗扣。
 * **深度单品测评**：👉 [阅读《2026 云界线深度评测：全专线晚高峰稳不稳？AI 开发与极客网络避坑指南》全文](/2026/10/11/yunjiexian-review-2026/)
-* **官方特惠直达**：<a href="https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L" target="_blank" rel="nofollow sponsored noopener noreferrer">🔗 👉 访问云界线官方站点（已内置专属 7 折特惠通道）</a>
+* **官方特惠直达**：<a href="/go.html?id=yunjiexian" target="_blank" rel="nofollow sponsored noopener noreferrer">🔗 👉 访问云界线官方站点（已内置专属 7 折特惠通道）</a>
 
 ### 2. 大佬云：原生双 ISP 住宅出口，海外远程开发防风控标杆
 * **评测核心结论**：深耕原生纯净住宅出口，IPQS 欺诈分低至 15 分以内。针对跨境远程运维（SSH/VS Code Remote）、海外企业级支付（Stripe/PayPal）与 OpenAI/Claude 高频调用提供几乎零阻断的环境，平均 Jitter 保持在 1.2ms~2.8ms。
 * **深度单品测评**：👉 [阅读《大佬云 2026 深度体验：原生纯净 IP 与 GitHub/海外远程开发连通性实测》全文](/2026/10/11/dalaoyun-review-2026/)
-* **官方特惠直达**：<a href="https://mofanvip01.dalaoyunaff.com/#/?code=QT2rqp5V" target="_blank" rel="nofollow sponsored noopener noreferrer">🔗 👉 访问大佬云官方站点（开通即享专属开发加速专线）</a>
+* **官方特惠直达**：<a href="/go.html?id=dalaoyun" target="_blank" rel="nofollow sponsored noopener noreferrer">🔗 👉 访问大佬云官方站点（开通即享专属开发加速专线）</a>
 
 ### 3. 环球梯：多协议现代化架构，高性价比轻量协同与备灾利器
 * **评测核心结论**：极度跟进新一代代理技术生态，全面标配 Hysteria 2、TUIC v5 与 VLESS-Reality。在恶劣 Wi-Fi 与校园网环境下展现出无与伦比的穿透与抗拥塞能力，客户端全平台一键导入，每 GB 单价极具亲民优势。
 * **深度单品测评**：👉 [阅读《环球梯 2026 深度评测：多协议灵活配置与跨境办公性价比之选》全文](/2026/10/11/huanqiuti-review-2026/)
-* **官方特惠直达**：<a href="https://mofanvip01.huanqiutiaff.com/#/?code=l7oLmjVU" target="_blank" rel="nofollow sponsored noopener noreferrer">🔗 👉 访问环球梯官方站点（领取高性价比轻量办公专属礼包）</a>
+* **官方特惠直达**：<a href="/go.html?id=huanqiuti" target="_blank" rel="nofollow sponsored noopener noreferrer">🔗 👉 访问环球梯官方站点（领取高性价比轻量办公专属礼包）</a>
 
 ### 4. 榴莲云：单节点 2.5Gbps 物理专线，750GB 海量大吞吐研发重器
 * **评测核心结论**：单节点接入工业级 2.5Gbps 物理大带宽上行，全量端到端 IPLC 纯物理出租电路。晚高峰 128 线程并发实测下行突破 820Mbps，整条专线 0.0% 丢包。标配 750GB 海量月流量池，大包折后低至 7 折，专为大模型权重迁移与大型代码库吞吐打造。
 * **深度单品测评**：👉 [阅读《榴莲云 2026 深度评测：单节点 2.5Gbps 物理专线与 750GB 海量大流量实测》全文](/2026/10/12/liulianyun-review-2026/)
-* **官方特惠直达**：<a href="https://mofan88.liulianyunaff.com/#/?code=ETsQBSuR" target="_blank" rel="nofollow sponsored noopener noreferrer">🔗 👉 访问榴莲云官方站点（750GB 海量物理专线 7 折直达通道）</a>
+* **官方特惠直达**：<a href="/go.html?id=liulianyun" target="_blank" rel="nofollow sponsored noopener noreferrer">🔗 👉 访问榴莲云官方站点（750GB 海量物理专线 7 折直达通道）</a>
 
 ### 5. 闪电鼠：全系 1x IEPL 专线，不限并发设备数的高性价比首选
 * **评测核心结论**：精准击碎行业扣量与设备限制痛点，全节点实打实 1.0x 计费，不设在线并发设备数上限。搭载双 ISP 原生住宅出口与企业级 IEPL 专线，极少触发 Cloudflare 盾，非常契合多终端极客、自由职业者与小型跨境团队。
 * **深度单品测评**：👉 [阅读《闪电鼠 2026 深度评测：全节点 1x IEPL 专线与不限设备并发抗风控实测》全文](/2026/10/12/shandianshu-review-2026/)
-* **官方特惠直达**：<a href="https://mofanvip01.shandianshuaff.com/#/?code=a3GAQAXg" target="_blank" rel="nofollow sponsored noopener noreferrer">🔗 👉 访问闪电鼠官方站点（全节点 1x 专线无套路 · 不限设备并发特惠）</a>
+* **官方特惠直达**：<a href="/go.html?id=shandianshu" target="_blank" rel="nofollow sponsored noopener noreferrer">🔗 👉 访问闪电鼠官方站点（全节点 1x 专线无套路 · 不限设备并发特惠）</a>
 
 ### 6. 神行加速：BGP 智能多线中转，电竞级 FullCone NAT 低延迟多面手
 * **评测核心结论**：全链路采用 FullCone NAT（完全锥形 NAT / NAT1）架构，UDP 端口在会话建立后保持开放双向映射，外服联机直达 NAT Type A / Open，发包 5000 次丢包为 0.0%。BGP 多线中转稳定可靠，特惠折算仅需 ¥1.1/天。
 * **深度单品测评**：👉 [阅读《神行加速 2026 深度评测：电竞级 FullCone NAT 与低延迟多面手实测》全文](/2026/10/12/shenxing-review-2026/)
-* **官方特惠直达**：<a href="https://vipmofan01.shenxingaff.com/#/?code=nn4ohwnK" target="_blank" rel="nofollow sponsored noopener noreferrer">🔗 👉 访问神行加速官方站点（电竞级 FullCone NAT 低至 ¥1.1/天专属特惠）</a>
+* **官方特惠直达**：<a href="/go.html?id=shenxing" target="_blank" rel="nofollow sponsored noopener noreferrer">🔗 👉 访问神行加速官方站点（电竞级 FullCone NAT 低至 ¥1.1/天专属特惠）</a>
 
 ---
 

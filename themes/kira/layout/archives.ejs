@@ -1,4 +1,20 @@
 <section class="kira-archives">
+    <% 
+        var pageHeading = '全站文章归档';
+        if (is_category()) {
+            pageHeading = '分类：' + page.category;
+        } else if (is_tag()) {
+            pageHeading = '标签：' + page.tag;
+        } else if (page.year) {
+            pageHeading = '归档：' + page.year + '年' + (page.month ? page.month + '月' : '');
+        }
+    %>
+    <div class="kira-archive-header" style="margin-bottom: 24px; padding-bottom: 12px; border-bottom: 1px dashed rgba(0,0,0,0.1);">
+        <h1 style="font-size: 1.5rem; font-weight: 700; margin: 0; display: flex; align-items: center; gap: 8px;">
+            <i class="kirafont <%= is_category() ? 'icon-container-fill' : (is_tag() ? 'icon-tag-fill' : 'icon-calendar-fill') %>"></i>
+            <%= pageHeading %>
+        </h1>
+    </div>
     <div class="tagcloud kira-rainbow">
         <%- list_tags({
             show_count: true,

@@ -1,5 +1,5 @@
 ---
-title: 后翻墙时代协议进化论：Hysteria 2、TUIC v5 与 Shadowsocks-2022 深度技术剖析、内核调优与弱网实战评测 - 极客前沿
+title: 新一代代理协议解析：Hysteria 2、TUIC v5 与 Shadowsocks-2022 弱网实测
 date: 2026-10-21 15:30:00
 cover: 'https://images.unsplash.com/photo-1790904629820-9bc1ac08fd7c?q=80&w=627&auto=format&fit=crop'
 description: 深入传输层与应用层安全边界，硬核拆解 Hysteria 2 的 Brutal 拥塞控制、TUIC v5 的 0-RTT 握手复用与 Shadowsocks-2022 / Reality 防探测机制。结合 Sing-box 与 Clash 内核参数调优，解决晚高峰骨干网 QoS 严苛限制与高丢包弱网下的网络瘫痪。

@@ -1,3 +1,24 @@
+<% if (is_archive() || is_category() || is_tag() || !is_home()) { 
+    var pageHeading = '文章列表';
+    var headingIcon = 'icon-unordered-list';
+    if (is_category()) {
+        pageHeading = '分类：' + page.category;
+        headingIcon = 'icon-container-fill';
+    } else if (is_tag()) {
+        pageHeading = '标签：' + page.tag;
+        headingIcon = 'icon-tag-fill';
+    } else if (is_archive()) {
+        pageHeading = '归档：' + (page.year ? page.year + '年' + (page.month ? page.month + '月' : '') : '全站历史文章');
+        headingIcon = 'icon-calendar-fill';
+    }
+%>
+    <div class="kira-list-header" style="margin-bottom: 24px; padding: 16px 22px; background: rgba(255,255,255,0.85); backdrop-filter: blur(12px); border-radius: 12px; border: 1px solid rgba(0,0,0,0.06); box-shadow: 0 4px 16px rgba(0,0,0,0.03);">
+        <h1 style="font-size: 1.35rem; font-weight: 700; margin: 0; display: flex; align-items: center; gap: 10px; color: #1e293b;">
+            <i class="kirafont <%= headingIcon %>" style="color: #3b82f6;"></i>
+            <%= pageHeading %>
+        </h1>
+    </div>
+<% } %>
 <div class="kira-posts">
     <% page.posts.each(function (page) { %>
         <div class="kira-post">

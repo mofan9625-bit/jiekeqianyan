@@ -6,15 +6,41 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<%- css("css/layout") %>
-		<% var title=page.title; if (is_archive()){ title=__('archive'); if
-		(is_month()){ title +='：' + page.year + '/' + page.month; } else if (is_year()){ title
-		+='：' + page.year; } } else if (is_category()){ title=__('count.categories') + '：' +
-		page.category; } else if (is_tag()){ title=__('count.tags') + '：' + page.tag; } %>
-		<title><% if (title){ %> <%= title %> - <% } %> <%= config.title %></title>
-		
 		<%
-			var rawDesc = page.description || page.excerpt || page.content || config.description;
+			var siteBrand = (config.title || '').split(' - ')[0].trim() || '极客前沿';
+			var title = page.title;
+			if (is_archive()){
+				title = __('archive');
+				if (is_month()){
+					title += '：' + page.year + '/' + page.month;
+				} else if (is_year()){
+					title += '：' + page.year;
+				}
+			} else if (is_category()){
+				title = __('count.categories') + '：' + page.category;
+			} else if (is_tag()){
+				title = __('count.tags') + '：' + page.tag;
+			}
+
+			var cleanTitle = title ? title.replace(new RegExp('\\s*-\\s*' + siteBrand + '.*$', 'i'), '').trim() : '';
+			var displayTitle = is_home() ? config.title : (cleanTitle ? cleanTitle + ' - ' + siteBrand : config.title);
+
+			var rawDesc = page.description || page.excerpt || page.content;
+			if (!rawDesc) {
+				if (is_category()) {
+					rawDesc = '极客前沿「' + page.category + '」分类专栏，汇集 2026 最新前沿科技实测、配置指南与技术评测干货。';
+				} else if (is_tag()) {
+					rawDesc = '极客前沿「' + page.tag + '」精选专题文章列表与深度实测解析。';
+				} else if (is_archive()) {
+					rawDesc = '极客前沿历史文章全量归档索引，涵盖前沿科技、AI效率办公、网络技术与跨境出海。';
+				} else {
+					rawDesc = config.description || '极客前沿 - 专注于前沿科技、AI 效率办公、网络技术测评与跨境出海干货的独立博客。';
+				}
+			}
 			var cleanDesc = strip_html(rawDesc || '').replace(/[\r\n\s]+/g, ' ').trim();
+			if (!cleanDesc) {
+				cleanDesc = config.description || '极客前沿 - 专注于前沿科技、AI 效率办公、网络技术测评与跨境出海干货的独立博客。';
+			}
 			if (cleanDesc.length > 150) {
 				cleanDesc = cleanDesc.substring(0, 147) + '...';
 			}
@@ -26,6 +52,8 @@
 				pageCanonicalUrl = pageCanonicalUrl.slice(0, -10);
 			}
 		%>
+		<title><%= displayTitle %></title>
+
 		<!-- SEO & Meta Tags -->
 		<meta name="description" content="<%= cleanDesc %>" />
 		<meta name="keywords" content="<%= (page.tags && page.tags.length ? page.tags.map(t=>t.name).join(',') : config.keywords) %>" />
@@ -40,16 +68,16 @@
 
 		<!-- Open Graph & Social Media Metadata -->
 		<meta property="og:type" content="<%= is_post() ? 'article' : 'website' %>" />
-		<meta property="og:title" content="<%= title ? title + ' - ' + config.title : config.title %>" />
+		<meta property="og:title" content="<%= displayTitle %>" />
 		<meta property="og:description" content="<%= cleanDesc %>" />
 		<meta property="og:url" content="<%= pageCanonicalUrl %>" />
-		<meta property="og:site_name" content="<%= config.title %>" />
+		<meta property="og:site_name" content="<%= siteBrand %>" />
 		<meta property="og:image" content="<%= pageImageUrl %>" />
 		<meta property="og:locale" content="zh_CN" />
 
 		<!-- Twitter Card Metadata -->
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="<%= title ? title + ' - ' + config.title : config.title %>" />
+		<meta name="twitter:title" content="<%= displayTitle %>" />
 		<meta name="twitter:description" content="<%= cleanDesc %>" />
 		<meta name="twitter:image" content="<%= pageImageUrl %>" />
 
@@ -58,13 +86,13 @@
 		{
 			"@context": "https://schema.org",
 			"@type": "<%= is_post() ? 'BlogPosting' : 'WebSite' %>",
-			"name": "<%= title ? title + ' - ' + config.title : config.title %>",
+			"name": "<%= displayTitle %>",
 			"headline": "<%= title || config.title %>",
 			"description": "<%- cleanDesc.replace(/"/g, '\\"') %>",
 			"url": "<%= pageCanonicalUrl %>",
 			"publisher": {
 				"@type": "Organization",
-				"name": "<%= config.title %>",
+				"name": "<%= siteBrand %>",
 				"logo": {
 					"@type": "ImageObject",
 					"url": "<%= config.url + theme.avatar %>"

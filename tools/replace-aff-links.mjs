@@ -5,7 +5,7 @@ const AFF_MAP = [
   {
     id: 'yunjiexian',
     name: '云界线',
-    url: 'https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L'
+    url: 'https://lier01.yunjiexianaff.com/#/?code=xPthfI62'
   },
   {
     id: 'dalaoyun',

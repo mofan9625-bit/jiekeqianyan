@@ -122,7 +122,7 @@
 			}
 		%>
 
-		<!-- 延伸阅读 / 相关推荐模块 -->
+		<!-- 延伸阅读 / 推荐专题（纯净极客卡片，无大图干扰） -->
 		<% if (relatedPosts.length > 0) { %>
 		<div class="kira-related-posts">
 			<div class="kira-related-title">
@@ -130,20 +130,29 @@
 			</div>
 			<div class="kira-related-list">
 				<% relatedPosts.forEach(function(rp) { %>
-				<a href="<%- url_for(rp.path) %>" class="kira-related-item">
-					<% if (rp.cover) { %>
-					<div class="kira-related-cover">
-						<img src="<%- rp.cover %>" alt="<%= rp.title %>" loading="lazy" />
+				<a href="<%- url_for(rp.path) %>" class="kira-related-card">
+					<div class="kira-related-header">
+						<% if (rp.categories && rp.categories.length) { %>
+						<span class="kira-related-badge">
+							<i class="kirafont icon-container-fill"></i>
+							<%= rp.categories.data ? rp.categories.data[0].name : rp.categories[0].name %>
+						</span>
+						<% } else { %>
+						<span class="kira-related-badge">推荐</span>
+						<% } %>
+						<span class="kira-related-time">
+							<i class="kirafont icon-time-circle-fill"></i>
+							<%= min2read(rp.content, {cn: 250, en: 160}) %> 分钟
+						</span>
 					</div>
-					<% } %>
-					<div class="kira-related-info">
-						<div class="kira-related-post-title"><%= rp.title %></div>
-						<div class="kira-related-meta">
-							<span><i class="kirafont icon-calendar-fill"></i> <%- date(rp.date, "YYYY-MM-DD") %></span>
-							<% if (rp.categories && rp.categories.length) { %>
-							<span class="kira-related-cat"><i class="kirafont icon-container-fill"></i> <%= rp.categories.data ? rp.categories.data[0].name : rp.categories[0].name %></span>
-							<% } %>
-						</div>
+					<div class="kira-related-card-title"><%= rp.title %></div>
+					<% 
+						let desc = rp.description || strip_html(rp.content).substring(0, 75).trim() + '...';
+					%>
+					<div class="kira-related-desc"><%= desc %></div>
+					<div class="kira-related-footer">
+						<span class="kira-related-date"><i class="kirafont icon-calendar-fill"></i> <%- date(rp.date, "YYYY-MM-DD") %></span>
+						<span class="kira-related-more">阅读全文 <i class="kirafont icon-right"></i></span>
 					</div>
 				</a>
 				<% }); %>

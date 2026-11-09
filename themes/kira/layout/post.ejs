@@ -37,33 +37,146 @@
 		<%- image_auto_lazyload(page.content) %>
 	</article>
 
-	<% if (!page.reprinted){ %> <%- partial('components/copyright') %> <% } %> <% if (page.layout ==
-	'post') { %>
-	<div class="kira-post-nav">
-		<nav class="post-nav">
-			<% site.categories.map(function(category){ %> <%
-			page.categories.map(function(page_category){ %> <% if(page_category.name ==
-			category.name){ %>
-			<!-- 先找到与当前文字相同的目录 -->
-			<% let i = 0;%> <% category.posts.sort('date').map(function(post){ %> <% i++; %> <%
-			if(post.title == page.title){ %>
-			<!-- 在找到当前文章所在的 index -->
-			<% let ix = 0;%> <% category.posts.sort('date').map(function(post){ %> <% ix++; %> <%
-			if(ix == i + 1 && post.title){ %>
-			<!-- 下一篇文章 -->
-			<div class="new">
-				<span>下一章</span>
-				<a href="<%- url_for(post.path) %>"> <%= post.title %></a>
+	<% if (!page.reprinted){ %> <%- partial('components/copyright') %> <% } %> 
+	<% if (page.layout == 'post') { %>
+		<%
+			// --- 1. 计算上一篇与下一篇（同分类优先，全站降级保底，彻底避免死胡同与重复） ---
+			let prevPost = null;
+			let nextPost = null;
+
+			if (page.categories && page.categories.length) {
+				const mainCat = page.categories.data ? page.categories.data[0] : page.categories[0];
+				if (mainCat && mainCat.posts) {
+					const catPosts = mainCat.posts.sort('date', 1).toArray();
+					if (catPosts.length > 1) {
+						const curIdx = catPosts.findIndex(function(p) { return p._id === page._id || p.path === page.path; });
+						if (curIdx !== -1) {
+							if (curIdx > 0) prevPost = catPosts[curIdx - 1];
+							if (curIdx < catPosts.length - 1) nextPost = catPosts[curIdx + 1];
+						}
+					}
+				}
+			}
+
+			// 安全保底：当分类单侧无文章时，取全站时间线补全，但严格校验互斥避免重复
+			if (!prevPost && page.prev && (!nextPost || page.prev.path !== nextPost.path)) {
+				prevPost = page.prev;
+			}
+			if (!nextPost && page.next && (!prevPost || page.next.path !== prevPost.path)) {
+				nextPost = page.next;
+			}
+
+			if (prevPost && nextPost && prevPost.path === nextPost.path) {
+				prevPost = null;
+			}
+
+			// --- 2. 计算智能相关推荐文章（基于 Tags 相似度权重与 Category） ---
+			let relatedPosts = [];
+			const currentTagNames = [];
+			if (page.tags && page.tags.length) {
+				page.tags.forEach(function(t) {
+					currentTagNames.push(t.name || t);
+				});
+			}
+
+			const scoredPosts = [];
+			site.posts.forEach(function(p) {
+				if (p.path === page.path) return;
+				let score = 0;
+				if (p.tags && p.tags.length && currentTagNames.length) {
+					p.tags.forEach(function(t) {
+						const tName = t.name || t;
+						if (currentTagNames.indexOf(tName) !== -1) {
+							score += 2;
+						}
+					});
+				}
+				if (page.categories && page.categories.length && p.categories && p.categories.length) {
+					const curCatName = page.categories.data ? page.categories.data[0].name : page.categories[0].name;
+					const pCatName = p.categories.data ? p.categories.data[0].name : p.categories[0].name;
+					if (curCatName && pCatName && curCatName === pCatName) {
+						score += 1;
+					}
+				}
+				if (score > 0) {
+					scoredPosts.push({ post: p, score: score });
+				}
+			});
+
+			scoredPosts.sort(function(a, b) {
+				return b.score - a.score || b.post.date - a.post.date;
+			});
+
+			relatedPosts = scoredPosts.slice(0, 3).map(function(item) { return item.post; });
+
+			if (relatedPosts.length < 3) {
+				const usedPaths = [page.path];
+				relatedPosts.forEach(function(p) { usedPaths.push(p.path); });
+				site.posts.sort('date', -1).forEach(function(p) {
+					if (relatedPosts.length >= 3) return;
+					if (usedPaths.indexOf(p.path) === -1) {
+						relatedPosts.push(p);
+						usedPaths.push(p.path);
+					}
+				});
+			}
+		%>
+
+		<!-- 延伸阅读 / 相关推荐模块 -->
+		<% if (relatedPosts.length > 0) { %>
+		<div class="kira-related-posts">
+			<div class="kira-related-title">
+				<i class="kirafont icon-unordered-list"></i> 延伸阅读 / 推荐专题
 			</div>
-			<% } %> <% if(ix == i - 1 && post.title){ %>
-			<!-- 上一篇文章 -->
-			<div class="old">
-				<span>上一章</span>
-				<a href="<%- url_for(post.path) %>"> <%= post.title %></a>
+			<div class="kira-related-list">
+				<% relatedPosts.forEach(function(rp) { %>
+				<a href="<%- url_for(rp.path) %>" class="kira-related-item">
+					<% if (rp.cover) { %>
+					<div class="kira-related-cover">
+						<img src="<%- rp.cover %>" alt="<%= rp.title %>" loading="lazy" />
+					</div>
+					<% } %>
+					<div class="kira-related-info">
+						<div class="kira-related-post-title"><%= rp.title %></div>
+						<div class="kira-related-meta">
+							<span><i class="kirafont icon-calendar-fill"></i> <%- date(rp.date, "YYYY-MM-DD") %></span>
+							<% if (rp.categories && rp.categories.length) { %>
+							<span class="kira-related-cat"><i class="kirafont icon-container-fill"></i> <%= rp.categories.data ? rp.categories.data[0].name : rp.categories[0].name %></span>
+							<% } %>
+						</div>
+					</div>
+				</a>
+				<% }); %>
 			</div>
-			<% } %> <% }) %> <% } %> <% }) %> <% } %> <% })%> <% }) %>
-		</nav>
-	</div>
+		</div>
+		<% } %>
+
+		<!-- 上一篇 / 下一篇 导航卡片 -->
+		<div class="kira-post-nav">
+			<nav class="post-nav">
+				<% if (prevPost) { %>
+				<div class="old">
+					<a href="<%- url_for(prevPost.path) %>" class="nav-card" title="<%= prevPost.title %>">
+						<span class="nav-direction"><i class="kirafont icon-left"></i> 上一篇</span>
+						<span class="nav-title"><%= prevPost.title %></span>
+					</a>
+				</div>
+				<% } else { %>
+				<div class="old empty"></div>
+				<% } %>
+
+				<% if (nextPost) { %>
+				<div class="new">
+					<a href="<%- url_for(nextPost.path) %>" class="nav-card" title="<%= nextPost.title %>">
+						<span class="nav-direction">下一篇 <i class="kirafont icon-right"></i></span>
+						<span class="nav-title"><%= nextPost.title %></span>
+					</a>
+				</div>
+				<% } else { %>
+				<div class="new empty"></div>
+				<% } %>
+			</nav>
+		</div>
 	<% } %>
 	<div class="kira-post-meta kira-rainbow">
 		<% if (page.categories && page.categories.length){ %>

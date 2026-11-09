@@ -131,50 +131,194 @@
 		opacity: 0.1;
 	}
 
+	// 延伸阅读 / 相关推荐
+	.kira-related-posts {
+		margin: 25px 0 15px 0;
+		padding: 20px;
+		background: #ffffff;
+		border-radius: 12px;
+		box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+		border: 1px solid #f0f0f0;
+
+		.kira-related-title {
+			font-size: 1.05em;
+			font-weight: 700;
+			color: #2c3e50;
+			margin-bottom: 15px;
+			display: flex;
+			align-items: center;
+			gap: 8px;
+
+			i {
+				color: $color1;
+				font-size: 1.15em;
+			}
+		}
+
+		.kira-related-list {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 15px;
+
+			@media (max-width: 768px) {
+				grid-template-columns: 1fr;
+				gap: 12px;
+			}
+
+			.kira-related-item {
+				display: flex;
+				flex-direction: column;
+				background: #fbfbfc;
+				border: 1px solid #ebeef5;
+				border-radius: 8px;
+				overflow: hidden;
+				text-decoration: none;
+				transition: all 0.25s ease;
+
+				&:hover {
+					transform: translateY(-3px);
+					border-color: $color1;
+					box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+
+					.kira-related-post-title {
+						color: $color1;
+					}
+				}
+
+				.kira-related-cover {
+					width: 100%;
+					height: 110px;
+					overflow: hidden;
+					background: #f0f2f5;
+
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						transition: transform 0.3s ease;
+					}
+				}
+
+				&:hover .kira-related-cover img {
+					transform: scale(1.04);
+				}
+
+				.kira-related-info {
+					padding: 12px;
+					display: flex;
+					flex-direction: column;
+					flex: 1;
+
+					.kira-related-post-title {
+						font-size: 0.9em;
+						font-weight: 600;
+						color: #333333;
+						line-height: 1.45;
+						margin-bottom: 8px;
+						display: -webkit-box;
+						-webkit-line-clamp: 2;
+						-webkit-box-orient: vertical;
+						overflow: hidden;
+						transition: color 0.2s;
+					}
+
+					.kira-related-meta {
+						margin-top: auto;
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						font-size: 0.78em;
+						color: #909399;
+
+						span {
+							display: flex;
+							align-items: center;
+							gap: 4px;
+						}
+
+						.kira-related-cat {
+							color: $color1;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// 上一篇 / 下一篇 导航卡片
 	.kira-post-nav {
 		width: 100%;
-		height: auto;
-		min-height: 2.5em;
-		background-color: #ffffff;
-		margin-top: 15px;
-		margin-bottom: 15px;
+		margin: 20px 0 25px 0;
 		user-select: none;
 
 		.post-nav {
 			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			flex-wrap: wrap;
-			gap: 15px;
+			gap: 16px;
+			align-items: stretch;
 
-			.old, .new {
-				max-width: 48%;
-				overflow: hidden;
-				text-overflow: ellipsis;
-				white-space: nowrap;
+			@media (max-width: 768px) {
+				flex-direction: column;
+				gap: 12px;
 			}
 
-			.old {
-				float: none;
-				text-align: left;
+			.old, .new {
+				flex: 1;
+				min-width: 0;
+
+				&.empty {
+					display: none;
+				}
 			}
 
 			.new {
-				float: none;
-				text-align: right;
-				margin-left: auto;
+				.nav-card {
+					text-align: right;
+				}
 			}
 
-			div a {
-				transition: 0.2s;
-				padding: 0.2em;
-				color: $color1;
-				border-bottom: 1px solid $krdbgc1;
+			.nav-card {
+				display: block;
+				height: 100%;
+				padding: 14px 18px;
+				background: #ffffff;
+				border: 1px solid #ebeef5;
+				border-radius: 8px;
+				text-decoration: none;
+				box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+				transition: all 0.25s ease;
 
 				&:hover {
-					text-shadow: 0px 0px 5px $krlbgc1;
-					text-decoration: none;
-					border-bottom: 1px solid $color1;
+					border-color: $color1;
+					box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+					transform: translateY(-2px);
+
+					.nav-title {
+						color: $color1;
+					}
+				}
+
+				.nav-direction {
+					display: block;
+					font-size: 0.82em;
+					color: #909399;
+					margin-bottom: 6px;
+					font-weight: 500;
+
+					i {
+						font-size: 0.9em;
+					}
+				}
+
+				.nav-title {
+					display: block;
+					font-size: 0.95em;
+					font-weight: 600;
+					color: #303133;
+					line-height: 1.45;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					transition: color 0.2s;
 				}
 			}
 		}

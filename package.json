@@ -9,7 +9,8 @@
     "deploy": "hexo deploy",
     "server": "hexo server",
     "dev": "hexo server",
-    "indexnow": "node tools/submit-indexnow.mjs"
+    "indexnow": "node tools/submit-indexnow.mjs",
+    "gen:index": "node scripts/gen-index.js"
   },
   "hexo": {
     "version": "7.3.0"

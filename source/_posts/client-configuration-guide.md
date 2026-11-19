@@ -55,4 +55,13 @@ graph TD
 
 ---
 
+### 四、进阶生态与特殊设备配置延伸
+
+掌握了手机与 PC 桌面端的基本配置后，如果你需要在更复杂的硬件与终端场景下使用加速通道，可参考以下进阶实战：
+- **客厅大屏与电视盒子**：[《2026 电视端科学上网全攻略：Apple TV 与 Android TV 极速配置 4K 流媒体与智能分流实战》](/2026/11/19/apple-tv-android-tv-proxy-4k-guide/)
+- **开发者命令行穿透**：[《告别 Connection Timed Out！2026 开发者终端代理终极指南：WSL2、Git 与 Docker 网络穿透实战》](/2026/11/19/wsl2-docker-git-terminal-proxy-guide/)
+- **全屋免客户端网关**：[《彻底告别客户端！OpenWrt / iStoreOS 软路由透明代理配置与 DNS 防泄漏实操指南》](/2026/11/19/openwrt-istoreos-clash-transparent-proxy-guide/)
+
+---
+
 > **免责声明**：本文仅供网络技术交流、学术研究与客观测速参考，请遵守当地法律法规，购买与使用决策请自行审慎评估。

@@ -3,16 +3,15 @@ title: 2026 电视端科学上网全攻略：Apple TV 与 Android TV 极速配�
 description: 深度拆解 Apple TV (tvOS) 与 Android TV 电视端代理痛点，手把手实操 Sing-box、Clash 电视端配置，攻克 Netflix/Disney+ 跨区 4K 锁区与家庭分流难题。
 date: 2026-11-19 10:00:00
 cover: 'https://images.unsplash.com/photo-1790886965387-ed055870babc?q=80&w=687&auto=format&fit=crop'
-category: 客户端配置
-categories:
-  - 机场与代理工具
-  - 客户端配置
 tags:
   - Apple TV 科学上网
   - tvOS 代理配置
   - Android TV 翻墙
   - 电视端奈飞4K专线
   - 流媒体解锁
+categories:
+  - 客户端与全场景配置
+
 ---
 
 对于追求极致影音体验的极客和家庭用户而言，用手机或平板看流媒体始终差点意思，客厅的 4K/8K 大屏与杜比视界（Dolby Vision）才是终极享受。然而，很多用户在手机和 PC 上使用代理毫无阻碍，一搬到 **Apple TV** 或 **Android TV（索尼、小米、Chromecast 等）** 上，就会频繁遭遇：**打开奈飞（Netflix）提示“代理错误/代码报错”、Disney+ 无法加载甚至直接闪退、或是国内的爱奇艺与腾讯视频被误伤无法投屏**。

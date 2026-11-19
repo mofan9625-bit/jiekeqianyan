@@ -23,9 +23,12 @@ menu:
     回到首页:
         - /
         - icon-home
+    全站分类:
+        - /categories/
+        - icon-container-fill
     文章归档:
         - /archives/
-        - icon-container
+        - icon-calendar-fill
     关于本人:
         - /about/
         - icon-user
@@ -34,6 +37,7 @@ menu:
         - icon-unordered-list
 
 widgets:
+    - category
     - tagcloud
     - archive
 

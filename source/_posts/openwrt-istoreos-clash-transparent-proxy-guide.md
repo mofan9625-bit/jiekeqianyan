@@ -3,16 +3,15 @@ title: 彻底告别客户端！OpenWrt / iStoreOS 软路由透明代理配置与
 description: 彻底摆脱手机与电脑单机客户端！手把手带你搭建 OpenWrt 与 iStoreOS 旁路由透明网关，图解主旁路由拓扑防死循环配置，搞定 Fake-IP 模式与全屋无感翻墙。
 date: 2026-11-19 12:00:00
 cover: 'https://images.unsplash.com/photo-1790811578645-f1cdbe86049e?q=80&w=685&auto=format&fit=crop'
-category: 客户端配置
-categories:
-  - 机场与代理工具
-  - 客户端配置
 tags:
   - OpenWrt 科学上网
   - iStoreOS 旁路由设置
   - OpenClash 配置教程
   - 软路由透明代理
   - 旁路由拓扑
+categories:
+  - 客户端与全场景配置
+
 ---
 
 在每一个追求极致网络体验的极客家庭里，单机运行代理客户端往往是临时妥协的产物：每买一台新手机、平板、电脑都要重复下载软件、导入订阅；家里的任天堂 Switch、PS5 联机加速繁琐不堪；更不用说电视盒子上反人类的遥控器输入了。

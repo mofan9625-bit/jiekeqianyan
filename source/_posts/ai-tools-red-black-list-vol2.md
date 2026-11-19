@@ -2,14 +2,14 @@
 title: 硬核AI工具红黑榜 Vol.2 | Claude 3.5 Sonnet：长文本王者，还是代码幻觉制造机？
 date: 2026-10-08 20:30:00
 cover: 'https://images.unsplash.com/photo-1791190288870-dba9caefaba6?q=80&w=687&auto=format&fit=crop'
-categories:
-  - 硬核AI工具红黑榜
-  - 科技实测
 tags:
   - AI工具
   - Claude
   - 生产力
   - 深度测评
+categories:
+  - AI生产力与防封实战
+
 ---
 
 > ⚡ **专栏前言**：Vol.1 我们拆过 ChatGPT 的全能与幻觉，今天轮到另一位“长文本与代码美学”的代表选手——Claude 3.5 Sonnet。它经常被形容成更像人类编辑的模型，但真正上手后，你会发现它既能把一份混乱需求整理成漂亮方案，也可能用很自信的语气把一个不存在的 API 写进项目。本文不看宣传页，只讨论它在真实工作流里值不值得留下。

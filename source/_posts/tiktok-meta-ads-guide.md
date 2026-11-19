@@ -2,14 +2,14 @@
 title: 2026 年主流海外社媒引流矩阵搭建：TikTok 与 Meta 广告投放避坑指南
 date: 2026-10-05 16:00:00
 cover: 'https://images.unsplash.com/photo-1790619719523-43ba16a2303e?q=80&w=1964&auto=format&fit=crop'
-categories:
-  - 跨境出海
-  - 社媒引流
 tags:
   - TikTok运营
   - Meta广告
   - 海外营销
   - 社媒矩阵
+categories:
+  - 跨境出海与站长安全
+
 ---
 
 2026 年的海外流量格局中，TikTok 的短视频兴趣电商与 Meta（Facebook / Instagram）的精准受众广告依然是出海引流的两大超级双引擎。本文将为你拆解引流矩阵搭建与广告避坑策略。

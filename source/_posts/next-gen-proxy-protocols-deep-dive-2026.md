@@ -3,9 +3,6 @@ title: 新一代代理协议解析：Hysteria 2、TUIC v5 与 Shadowsocks-2022 �
 date: 2026-10-21 15:30:00
 cover: 'https://images.unsplash.com/photo-1790904629820-9bc1ac08fd7c?q=80&w=627&auto=format&fit=crop'
 description: 深入传输层与应用层安全边界，硬核拆解 Hysteria 2 的 Brutal 拥塞控制、TUIC v5 的 0-RTT 握手复用与 Shadowsocks-2022 / Reality 防探测机制。结合 Sing-box 与 Clash 内核参数调优，解决晚高峰骨干网 QoS 严苛限制与高丢包弱网下的网络瘫痪。
-categories:
-  - 网络与协议
-  - 极客工程实战
 tags:
   - Hysteria2
   - TUIC
@@ -13,6 +10,9 @@ tags:
   - QUIC协议
   - 网络调优
   - 弱网对抗
+categories:
+  - 专线网络与深度测评
+
 ---
 
 > **极客前沿技术导读**：进入 2026 年，网络审查与运营商流量工程（Traffic Engineering）的技术形态发生了深刻的代际演进。过去依靠简单 TLS 包装、VMess 或旧版 Shadowsocks 的方案，在运营商晚高峰激进的 UDP/TCP QoS 策略、深度包检测（DPI）以及主动探测（Active Probing）矩阵面前，丢包率往往激增至 30% 以上。

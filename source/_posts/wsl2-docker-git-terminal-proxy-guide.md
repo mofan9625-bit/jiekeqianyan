@@ -3,16 +3,15 @@ title: 告别 Connection Timed Out！2026 开发者终端代理终极指南：WS
 description: 为什么桌面开了代理终端依然报错？手把手教你配置 WSL2 镜像网络模式、Git 独立代理与 Docker Daemon 环境变量，彻底终结命令行网络死锁。
 date: 2026-11-19 14:00:00
 cover: 'https://images.unsplash.com/photo-1772289934977-1c1ef093e041?q=80&w=1632&auto=format&fit=crop'
-category: 客户端配置
-categories:
-  - 机场与代理工具
-  - 客户端配置
 tags:
   - WSL2 代理设置
   - 终端 git clone 超时
   - Docker pull 代理配置
   - 命令行代理环境变量
   - 开发者网络
+categories:
+  - 客户端与全场景配置
+
 ---
 
 相信每一位在 Windows 环境下进行技术研发的全栈程序员、AI 算法工程师，都曾经历过这种让人血压飙升的经典场景：

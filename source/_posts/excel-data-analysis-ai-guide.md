@@ -2,14 +2,14 @@
 title: 如何用 ChatGPT 和 Claude 自动化处理复杂的 Excel 表格与数据分析？
 date: 2026-10-05 12:00:00
 cover: 'https://images.unsplash.com/photo-1790949241847-078980f679af?q=80&w=692&auto=format&fit=crop'
-categories:
-  - AI与效率工具
-  - 办公自动化
 tags:
   - Excel自动化
   - ChatGPT
   - Claude
   - 数据分析
+categories:
+  - AI生产力与防封实战
+
 ---
 
 在日常办公中，面对动辄数万行、包含空值与混乱格式的 Excel 原始数据表，人工编写 VLOOKUP 或透视表耗时耗力。借助 ChatGPT 的代码沙箱与 Claude 的长文本能力，你可以实现全自动 Excel 处理。

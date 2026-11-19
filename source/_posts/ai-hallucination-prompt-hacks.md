@@ -2,14 +2,14 @@
 title: AI 幻觉怎么破？这几个使用大模型的提问技巧让回答准确率提升 80%
 date: 2026-10-05 13:00:00
 cover: 'https://images.unsplash.com/photo-1790841584223-cf0abbd0dc3d?q=80&w=687&auto=format&fit=crop'
-categories:
-  - AI与效率工具
-  - 提示词工程
 tags:
   - AI幻觉
   - 提示词技巧
   - ChatGPT
   - Prompt工程
+categories:
+  - AI生产力与防封实战
+
 ---
 
 生成式 AI 模型（LLM）最被诟病的缺点之一就是“一本正经地胡说八道”（AI 幻觉，Hallucination）。特别是在撰写专业报告、法律合同或代码时，虚假信息往往会带来严重后果。本文将分享 4 个顶尖提示词技巧，降低事实性错误风险。

@@ -2,14 +2,14 @@
 title: 新手独立站出海必备：2026年 Shopify 建站全流程与必备插件指南
 date: 2026-10-05 14:00:00
 cover: 'https://images.unsplash.com/photo-1790949241847-078980f679af?q=80&w=692&auto=format&fit=crop'
-categories:
-  - 跨境出海
-  - 独立站建站
 tags:
   - Shopify
   - 独立站
   - 跨境电商
   - 出海指南
+categories:
+  - 跨境出海与站长安全
+
 ---
 
 2026 年，跨境电商独立站已从“粗放型铺货”全面转向“精细化品牌出海”。作为全球市场占有率第一的建站平台，Shopify 凭其强大的生态系统成为出海首选。本文将分享最新 建站流程与必备插件盘点。

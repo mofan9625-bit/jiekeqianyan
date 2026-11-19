@@ -100,3 +100,4 @@ tags:
 搭建好软路由透明网关后，你的家庭网络就拥有了坚不可摧的底层地基：
 - **客厅观影**：如果想进一步了解电视端播放 4K 流媒体的专属配置细节，可参考：[《2026 电视端科学上网全攻略：Apple TV 与 Android TV 极速配置 4K 流媒体与智能分流实战》](/2026/11/19/apple-tv-android-tv-proxy-4k-guide/)；
 - **极客编程**：如果你更习惯在个人 PC 的 Linux 容器或终端中独立调试代理环境，推荐查阅：[《告别 Connection Timed Out！2026 开发者终端代理终极指南：WSL2、Git 与 Docker 网络穿透实战》](/2026/11/19/wsl2-docker-git-terminal-proxy-guide/)。
+

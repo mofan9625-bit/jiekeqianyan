@@ -143,3 +143,4 @@ sudo systemctl restart docker
 ### 五、 总结
 
 终端代理配置并非玄学，核心在于理清**系统环境变量**、**应用专属配置**与**虚拟机网络拓扑**的三层关系。借助 WSL2 镜像网络、Git 域名级代理分流以及 Systemd 守护进程注入，即可彻底告别 `Connection timed out`，打造畅通无阻的现代化极客开发环境。
+
